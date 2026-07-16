@@ -1,0 +1,230 @@
+/* ESTILO GENERAL */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F7FA;
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #2563EB;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header h2 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* MENÚ */
+
+nav {
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+nav h3 {
+    color: #2563EB;
+}
+
+nav ol li {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #22C55E;
+}
+section {
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: #2563EB;
+}
+
+section img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+section p {
+    text-align: justify;
+}
+button {
+    background-color: #22C55E;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #16A34A;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #2563EB;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius:100px;
+}
+
+.contenedor-mascotas {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.tarjeta {
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tarjeta h3 {
+    color: #2563EB;
+    margin-top: 25px;
+}
+
+.tarjeta p {
+    margin: 10px 15px;
+}
+
+.tarjeta button {
+    margin-top: 15px;
+}
+
+.tarjeta button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #49eb25;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#citas ol {
+    margin-left: 30px;
+}
+
+#citas li {
+    margin-bottom: 10px;
+}
+
+.tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-historial th {
+    background-color: #2563EB;
+    color: white;
+    padding: 12px;
+}
+
+.tabla-historial td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-historial tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #2563EB;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

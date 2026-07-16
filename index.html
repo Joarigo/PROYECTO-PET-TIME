@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET-TIME Tutorial</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>PET-TIME</h1>
+        <h2>Tutorial de Uso del Sistema Veterinario</h2>
+    </header>
+
+    <nav>
+        <h3>Contenido del Tutorial</h3>
+
+        <ol>
+            <li><a href="#login">Inicio de Sesión</a></li>
+            <li><a href="#registro">Registro de Usuarios</a></li>
+            <li><a href="#mascotas">Gestión de Mascotas</a></li>
+            <li><a href="#citas">Gestión de Citas</a></li>
+            <li><a href="#historial">Historial Clínico</a></li>
+            <li><a href="#notificaciones">Notificaciones</a></li>
+            <li><a href="#contacto">Formulario de Contacto</a></li>
+        </ol>
+    </nav>
+
+    <section id="login">
+
+    <h2>1. Inicio de Sesión</h2>
+
+    <img src="https://img.magnific.com/fotos-premium/joven-veterinaria-perro-sentado-suelo-aislado-fondo-blanco-sorprendida-senalando-dedo-al-costado_1368-390319.jpg?w=2000"
+alt="Veterinaria con perro">
+
+    <p>
+        El módulo de inicio de sesión permite a los usuarios acceder al sistema PET-TIME
+        mediante correo electrónico y contraseña, garantizando la seguridad de la información.
+    </p>
+
+</section>
+
+<section id="registro">
+
+    <h2>2. Registro de Usuarios</h2>
+
+    <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=1200"
+         alt="Registro de usuarios">
+
+    <p>
+        El módulo de registro permite crear una cuenta en PET-TIME para gestionar mascotas,
+        agendar citas médicas y consultar historiales clínicos.
+    </p>
+
+    <button onclick="mostrarRegistro()">
+        Ver más información
+    </button>
+
+    <div id="infoRegistro" style="display:none;">
+        <p>
+            Durante el registro se solicitan datos como nombre, correo electrónico,
+            teléfono y contraseña para garantizar la identificación del usuario.
+        </p>
+    </div>
+
+</section>
+
+<section id="mascotas">
+
+    <h2>3. Gestión de Mascotas</h2>
+
+    <img src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?w=800"
+         alt="Mascotas">
+
+    <p>
+        Este módulo permite registrar, consultar y actualizar la información de las mascotas
+        asociadas al usuario dentro del sistema PET-TIME.
+    </p>
+
+     <p>
+       <h3>De esta manera se ve la informacion reflejada en las TABLAS:</h3>
+    </p>
+
+    <table>
+        <tr>
+            <th>Foto</th>
+            <th>Nombre</th>
+            <th>Especie</th>
+            <th>Raza</th>
+            <th>Edad</th>
+            <th>Peso</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://png.pngtree.com/background/20230610/original/pngtree-golden-retriever-wallpaper-picture-image_3030940.jpg" alt="Max"></td>
+            <td>Max</td>
+            <td>Perro</td>
+            <td>Golden Retriever</td>
+            <td>2 años</td>
+            <td>14 kg</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://animalpets.co/wp-content/uploads/2024/11/Gato-Siames.png" alt="Luna"></td>
+            <td>Luna</td>
+            <td>Gato</td>
+            <td>Siames</td>
+            <td>1 año</td>
+            <td>2 kg</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://elpastoraleman.org/wp-content/uploads/2023/03/pastor-aleman-20.jpg" alt="Kaiser"></td>
+            <td>Kaiser</td>
+            <td>Perro</td>
+            <td>Pastor Alemán</td>
+            <td>5 años</td>
+            <td>28 kg</td>
+        </tr>
+    </table>
+
+    <p>
+       <h3>De esta manera se ve la informacion reflejada en las TARJETAS:</h3>
+    </p>
+
+    <div class="contenedor-mascotas">
+
+    <!-- MAX -->
+
+    <div class="tarjeta">
+
+        <img src="https://png.pngtree.com/background/20230610/original/pngtree-golden-retriever-wallpaper-picture-image_3030940.jpg"
+             alt="Max">
+
+        <h3>Max</h3>
+
+        <p><strong>Especie:</strong> Perro</p>
+        <p><strong>Raza:</strong> Golden Retriever</p>
+        <p><strong>Edad:</strong> 2 años</p>
+        <p><strong>Peso:</strong> 14 kg</p>
+
+        <button onclick="alert('Perfil de Max')">
+            Ver Perfil
+        </button>
+
+    </div>
+
+    <!-- LUNA -->
+
+    <div class="tarjeta">
+
+        <img src="https://animalpets.co/wp-content/uploads/2024/11/Gato-Siames.png"
+             alt="Luna">
+
+        <h3>Luna</h3>
+
+        <p><strong>Especie:</strong> Gato</p>
+        <p><strong>Raza:</strong> Siamés</p>
+        <p><strong>Edad:</strong> 1 año</p>
+        <p><strong>Peso:</strong> 2 kg</p>
+
+        <button onclick="alert('Perfil de Luna')">
+            Ver Perfil
+        </button>
+
+    </div>
+
+    <!-- KAISER -->
+
+    <div class="tarjeta">
+
+        <img src="https://elpastoraleman.org/wp-content/uploads/2023/03/pastor-aleman-20.jpg"
+             alt="Kaiser">
+
+        <h3>Kaiser</h3>
+
+        <p><strong>Especie:</strong> Perro</p>
+        <p><strong>Raza:</strong> Pastor Alemán</p>
+        <p><strong>Edad:</strong> 5 años</p>
+        <p><strong>Peso:</strong> 28 kg</p>
+
+        <button onclick="alert('Perfil de Kaiser')">
+            Ver Perfil
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="citas">
+
+    <h2>4. Gestión de Citas</h2>
+
+    <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=800"
+         alt="Citas Veterinarias">
+
+    <p>
+        El módulo de citas permite programar consultas veterinarias para las mascotas,
+        facilitando la organización de horarios y la atención médica.
+    </p>
+
+    <h3>Pasos para agendar una cita</h3>
+
+    <ol>
+        <li>Seleccionar la mascota.</li>
+        <li>Elegir el veterinario.</li>
+        <li>Escoger fecha y hora.</li>
+        <li>Confirmar la cita.</li>
+    </ol>
+
+    <button onclick="mostrarCita()">
+        Ver ejemplo de cita
+    </button>
+
+    <div id="infoCita" style="display:none;">
+        <p>
+            Cita confirmada para Max con el Dr. Pérez el día 20 de junio de 2026 a las 10:00 a.m.
+        </p>
+    </div>
+
+</section>
+
+<section id="historial">
+
+    <h2>5. Historial Clínico</h2>
+
+    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800"
+         alt="Historial Clínico">
+
+    <p>
+        El historial clínico permite consultar la información médica de cada mascota,
+        incluyendo diagnósticos, vacunas y tratamientos realizados por el veterinario.
+    </p>
+
+    <table class="tabla-historial">
+
+        <tr>
+            <th>Mascota</th>
+            <th>Fecha</th>
+            <th>Diagnóstico</th>
+            <th>Veterinario</th>
+        </tr>
+
+        <tr>
+            <td>Max</td>
+            <td>15/03/2026</td>
+            <td>Vacunación anual</td>
+            <td>Dr. Pérez</td>
+        </tr>
+
+        <tr>
+            <td>Luna</td>
+            <td>22/04/2026</td>
+            <td>Control general</td>
+            <td>Dra. Gómez</td>
+        </tr>
+
+        <tr>
+            <td>Kaiser</td>
+            <td>10/05/2026</td>
+            <td>Desparasitación</td>
+            <td>Dr. Ramírez</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section id="notificaciones">
+
+    <h2>6. Notificaciones</h2>
+
+    <img src="https://www.canal26.com/resizer/v2/IJ66YTA4DREORKFR6AFEKNXSAY.png?auth=6faf6017e10cb7388d57baa864e383a552c5af6ebe4915a965dc6d6029f5dc60&smart=true&width=450&height=354&quality=70"
+         alt="Notificaciones">
+
+    <p>
+        El módulo de notificaciones informa al usuario sobre próximas citas,
+        recordatorios de vacunación y actualizaciones importantes relacionadas
+        con sus mascotas.
+    </p>
+
+    <button onclick="mostrarNotificacion()">
+        Ver Notificación
+    </button>
+
+</section>
+
+<section id="contacto">
+
+    <h2>7. Formulario de Contacto</h2>
+
+    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800"
+         alt="Contacto">
+
+    <p>
+        Si tienes dudas sobre el uso de PET-TIME, puedes comunicarte con nuestro equipo de soporte mediante el siguiente formulario.
+    </p>
+
+    <form>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" placeholder="Ingrese su correo">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="5"
+                  placeholder="Escriba aquí su mensaje"></textarea>
+
+        <button type="button" onclick="enviarFormulario()">
+            Enviar Mensaje
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 PET-TIME - Sistema de Gestión Veterinaria
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
